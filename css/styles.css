@@ -1,17 +1,40 @@
 
-  body {
-    background-color: #F6F6F6;
-    color: #554994;
+  <style>
+  /* Add some spacing between the table cells */
+  td {
+    padding: 10px;
   }
-  hr {
-
-    border-color: grey;
-    border-width: 3px;
-    border-style: none;
-    border-top-style: dotted;
-    height: 0;
-    width: 90%;
+  
+  /* Center the table on the page */
+  table {
+    margin: 0 auto;
   }
-h1,h3 {
-  color: #00ADB5;
-}
+  
+  /* Make the headings bold and slightly larger */
+  h1, h3, h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  /* Add a border and background color to the education table */
+  table.education {
+    border: 1px solid black;
+    background-color: #f2f2f2;
+  }
+  
+  /* Add a hover effect to the links */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the achievements list */
+  ul.achievements {
+    list-style-type: square;
+    line-height: 1.5;
+  }
+  
+  /* Style the awards in the achievements list */
+  ul.achievements li b {
+    color: #f44336;
+  }
+</style>
