@@ -4,6 +4,39 @@ body {
   color: #272829;
 }
 
+/* Custom CSS for navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 10px 10px; /* Adjusts spacing between icons */
+}
+
+nav ul li a {
+  color: #000; /* Change this to your preferred color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Adds a smooth transition */
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Change this to your preferred hover color */
+}
+
+/* Increase the size of the home icon */
+nav ul li a i.bi-house-fill {
+  font-size: 164px; /* Increase the icon size */
+}
+
+
+
+
+
+
 a {
   color: #0563bb;
   text-decoration: none;
@@ -1054,6 +1087,8 @@ section {
   margin-top: 40px;
 }
 
+.contact .info .home-link:hover i,
+.contact .info .works-link:hover i,
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
