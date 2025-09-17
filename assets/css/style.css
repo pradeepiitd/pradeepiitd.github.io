@@ -79,15 +79,10 @@ nav ul li a i.bi-house-fill {
 }
 
 
-  /* === Elegant CTA buttons (teal & plum) ============================= */
-/* Use .btn.btn-elegant-* to outrank Bootstrap's base/hover rules */
-.btn.btn-elegant-teal{
+  .btn.btn-elegant-teal{
   background: linear-gradient(135deg,#1E3D59,#2A4F6E);
-  border-color:#1E3D59;
-  color:#fff;
-  padding:.6rem 1rem;
-  font-weight:600;
-  letter-spacing:.2px;
+  border-color:#1E3D59; color:#fff;
+  padding:.6rem 1rem; font-weight:600; letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
   transition: filter .2s ease, box-shadow .2s ease, transform .08s ease;
 }
@@ -103,11 +98,8 @@ nav ul li a i.bi-house-fill {
 
 .btn.btn-elegant-plum{
   background: linear-gradient(135deg,#4E3A65,#5A4A7A);
-  border-color:#4E3A65;
-  color:#fff;
-  padding:.6rem 1rem;
-  font-weight:600;
-  letter-spacing:.2px;
+  border-color:#4E3A65; color:#fff;
+  padding:.6rem 1rem; font-weight:600; letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
   transition: filter .2s ease, box-shadow .2s ease, transform .08s ease;
 }
@@ -120,6 +112,7 @@ nav ul li a i.bi-house-fill {
   box-shadow:0 6px 16px rgba(0,0,0,.12);
   transform:translateY(-1px);
 }
+
 
 /* Pill-style utility for icon buttons */
 .btn-chip{
@@ -1539,6 +1532,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
 
