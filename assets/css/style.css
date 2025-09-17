@@ -89,74 +89,57 @@ nav ul li a i.bi-house-fill {
 
 
 
+/* TEAL — lighter by default, darker on hover */
 .btn.btn-elegant-teal{
-  background: linear-gradient(135deg,#1E3D59,#2A4F6E);
-  border-color:#1E3D59; color:#fff;
-  padding:.6rem 1rem; font-weight:600; letter-spacing:.2px;
-  box-shadow:0 4px 12px rgba(0,0,0,.08);
-  /* removed transform from transition */
-  transition: filter .2s ease, box-shadow .2s ease;
-}
-.btn.btn-elegant-teal:hover,
-.btn.btn-elegant-teal:focus{
-  background: linear-gradient(135deg,#21465f,#2f5879);
+  /* lighter teal base */
+  background: linear-gradient(135deg,#2f5879,#3e6f8f);
+  border-color:#2f5879;
   color:#fff;
-  /* slightly brighter on hover */
-  filter:brightness(1.08);
-  box-shadow:0 6px 16px rgba(0,0,0,.12);
-}
-/* keep :active flat (no movement) */
-.btn.btn-elegant-teal:active{
-  filter:brightness(1.02);
-  box-shadow:0 5px 14px rgba(0,0,0,.10);
-}
-
-.btn.btn-elegant-plum{
-  background: linear-gradient(135deg,#4E3A65,#5A4A7A);
-  border-color:#4E3A65; color:#fff;
-  padding:.6rem 1rem; font-weight:600; letter-spacing:.2px;
-  box-shadow:0 4px 12px rgba(0,0,0,.08);
-  transition: filter .2s ease, box-shadow .2s ease;
-}
-.btn.btn-elegant-plum:hover,
-.btn.btn-elegant-plum:focus{
-  background: linear-gradient(135deg,#533f6d,#635186);
-  color:#fff;
-  filter:brightness(1.08);
-  box-shadow:0 6px 16px rgba(0,0,0,.12);
-}
-.btn.btn-elegant-plum:active{
-  filter:brightness(1.02);
-  box-shadow:0 5px 14px rgba(0,0,0,.10);
-}
-
-
-
-/* Pill-style utility for icon buttons */
-.btn-chip{
-  border-radius:999px;
-  display:inline-flex;
-  align-items:center;
-  gap:.4rem;
-  padding:.55rem 1rem;
+  padding:.6rem 1rem;
   font-weight:600;
   letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
-  /* remove transform from the transition so it won't nudge on hover */
-  transition: filter .2s ease, box-shadow .2s ease;
+  transition: background .2s ease, filter .2s ease, box-shadow .2s ease;
 }
-.btn-chip:hover,
-.btn-chip:focus{
-  /* slightly brighter + softer shadow; no transform */
-  filter:brightness(1.08);
+.btn.btn-elegant-teal:hover,
+.btn.btn-elegant-teal:focus{
+  /* darker on hover */
+  background: linear-gradient(135deg,#1E3D59,#2A4F6E);
+  border-color:#1E3D59;
+  color:#fff;
+  filter:brightness(0.98);
   box-shadow:0 6px 16px rgba(0,0,0,.12);
 }
-.btn-chip:active{
-  /* keep it steady on click as well */
-  filter:brightness(1.02);
+.btn.btn-elegant-teal:active{
+  filter:brightness(0.95);
   box-shadow:0 5px 14px rgba(0,0,0,.10);
 }
 
+/* PLUM — lighter by default, darker on hover */
+.btn.btn-elegant-plum{
+  /* lighter plum base */
+  background: linear-gradient(135deg,#5b4a7a,#6a5a8a);
+  border-color:#5b4a7a;
+  color:#fff;
+  padding:.6rem 1rem;
+  font-weight:600;
+  letter-spacing:.2px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition: background .2s ease, filter .2s ease, box-shadow .2s ease;
+}
+.btn.btn-elegant-plum:hover,
+.btn.btn-elegant-plum:focus{
+  /* darker on hover */
+  background: linear-gradient(135deg,#4E3A65,#5A4A7A);
+  border-color:#4E3A65;
+  color:#fff;
+  filter:brightness(0.98);
+  box-shadow:0 6px 16px rgba(0,0,0,.12);
+}
+.btn.btn-elegant-plum:active{
+  filter:brightness(0.95);
+  box-shadow:0 5px 14px rgba(0,0,0,.10);
+}
 
 
 
@@ -1557,6 +1540,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
 
