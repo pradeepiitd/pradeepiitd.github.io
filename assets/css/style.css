@@ -79,21 +79,36 @@ nav ul li a i.bi-house-fill {
 }
 
 
-  .btn.btn-elegant-teal{
+
+
+
+
+
+
+
+
+
+
+.btn.btn-elegant-teal{
   background: linear-gradient(135deg,#1E3D59,#2A4F6E);
   border-color:#1E3D59; color:#fff;
   padding:.6rem 1rem; font-weight:600; letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
-  transition: filter .2s ease, box-shadow .2s ease, transform .08s ease;
+  /* removed transform from transition */
+  transition: filter .2s ease, box-shadow .2s ease;
 }
 .btn.btn-elegant-teal:hover,
-.btn.btn-elegant-teal:focus,
-.btn.btn-elegant-teal:active{
+.btn.btn-elegant-teal:focus{
   background: linear-gradient(135deg,#21465f,#2f5879);
   color:#fff;
-  filter:brightness(1.06);
+  /* slightly brighter on hover */
+  filter:brightness(1.08);
   box-shadow:0 6px 16px rgba(0,0,0,.12);
-  transform:translateY(-1px);
+}
+/* keep :active flat (no movement) */
+.btn.btn-elegant-teal:active{
+  filter:brightness(1.02);
+  box-shadow:0 5px 14px rgba(0,0,0,.10);
 }
 
 .btn.btn-elegant-plum{
@@ -101,17 +116,20 @@ nav ul li a i.bi-house-fill {
   border-color:#4E3A65; color:#fff;
   padding:.6rem 1rem; font-weight:600; letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
-  transition: filter .2s ease, box-shadow .2s ease, transform .08s ease;
+  transition: filter .2s ease, box-shadow .2s ease;
 }
 .btn.btn-elegant-plum:hover,
-.btn.btn-elegant-plum:focus,
-.btn.btn-elegant-plum:active{
+.btn.btn-elegant-plum:focus{
   background: linear-gradient(135deg,#533f6d,#635186);
   color:#fff;
-  filter:brightness(1.06);
+  filter:brightness(1.08);
   box-shadow:0 6px 16px rgba(0,0,0,.12);
-  transform:translateY(-1px);
 }
+.btn.btn-elegant-plum:active{
+  filter:brightness(1.02);
+  box-shadow:0 5px 14px rgba(0,0,0,.10);
+}
+
 
 
 /* Pill-style utility for icon buttons */
@@ -1532,6 +1550,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
 
