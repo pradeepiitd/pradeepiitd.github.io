@@ -121,6 +121,24 @@ nav ul li a i.bi-house-fill {
   transform:translateY(-1px);
 }
 
+/* Pill-style utility for icon buttons */
+.btn-chip{
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.55rem 1rem;
+  font-weight:600;
+  letter-spacing:.2px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition: filter .2s ease, box-shadow .2s ease, transform .08s ease;
+}
+.btn-chip:hover,
+.btn-chip:focus{
+  filter:brightness(1.06);
+  box-shadow:0 6px 16px rgba(0,0,0,.12);
+  transform:translateY(-1px);
+}
 
 
 
@@ -1521,5 +1539,6 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
