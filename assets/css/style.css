@@ -159,6 +159,30 @@ nav ul li a i.bi-house-fill {
   box-shadow:0 5px 14px rgba(0,0,0,.10);
 }
 
+/* Make chip buttons match normal .btn shape when used together */
+.btn.btn-chip{ border-radius:.375rem; } /* Bootstrap’s default radius */
+
+/* Unique color for the Work button — light indigo base, darker on hover */
+.btn.btn-works{
+  background: linear-gradient(135deg,#7A8CE2,#6A7CD8); /* lighter by default */
+  border-color:#6A7CD8;
+  color:#fff;
+  padding:.55rem 1rem;
+  font-weight:600;
+  letter-spacing:.2px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.btn.btn-works:hover,
+.btn.btn-works:focus{
+  background: linear-gradient(135deg,#4B5FC6,#3F51B5); /* darker on hover */
+  border-color:#3F51B5;
+  color:#fff;
+  box-shadow:0 6px 16px rgba(0,0,0,.12);
+}
+.btn.btn-works:active{
+  box-shadow:0 5px 14px rgba(0,0,0,.10);
+}
 
 
 
@@ -1557,6 +1581,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
 
