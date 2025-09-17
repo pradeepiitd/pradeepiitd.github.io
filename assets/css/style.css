@@ -132,7 +132,7 @@ nav ul li a i.bi-house-fill {
 
 
 
-/* Pill-style utility for icon buttons */
+/* Pill-style utility for icon buttons — no hover movement */
 .btn-chip{
   border-radius:999px;
   display:inline-flex;
@@ -142,14 +142,22 @@ nav ul li a i.bi-house-fill {
   font-weight:600;
   letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
-  transition: filter .2s ease, box-shadow .2s ease, transform .08s ease;
+  /* removed transform from transitions to prevent nudge */
+  transition: filter .2s ease, box-shadow .2s ease;
 }
+
 .btn-chip:hover,
 .btn-chip:focus{
-  filter:brightness(1.06);
+  filter:brightness(1.08);
   box-shadow:0 6px 16px rgba(0,0,0,.12);
-  transform:translateY(-1px);
+  /* no transform */
 }
+
+.btn-chip:active{
+  filter:brightness(1.02);
+  box-shadow:0 5px 14px rgba(0,0,0,.10);
+}
+
 
 
 
@@ -1550,6 +1558,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
 
