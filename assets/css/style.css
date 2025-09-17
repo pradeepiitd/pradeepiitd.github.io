@@ -91,23 +91,21 @@ nav ul li a i.bi-house-fill {
 
 /* TEAL — lighter by default, darker on hover */
 .btn.btn-elegant-teal{
-  /* lighter teal base */
-  background: linear-gradient(135deg,#2f5879,#3e6f8f);
-  border-color:#2f5879;
+  background: linear-gradient(135deg,#3A6A84,#4E7F9A); /* lighter base */
+  border-color:#3A6A84;
   color:#fff;
   padding:.6rem 1rem;
   font-weight:600;
   letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
-  transition: background .2s ease, filter .2s ease, box-shadow .2s ease;
+  transition: background .2s ease, border-color .2s ease, filter .2s ease, box-shadow .2s ease;
 }
 .btn.btn-elegant-teal:hover,
 .btn.btn-elegant-teal:focus{
-  /* darker on hover */
-  background: linear-gradient(135deg,#1E3D59,#2A4F6E);
+  background: linear-gradient(135deg,#1E3D59,#2A4F6E); /* darker on hover */
   border-color:#1E3D59;
   color:#fff;
-  filter:brightness(0.98);
+  filter:brightness(0.98); /* tiny darken; remove if you want only the gradient change */
   box-shadow:0 6px 16px rgba(0,0,0,.12);
 }
 .btn.btn-elegant-teal:active{
@@ -117,20 +115,18 @@ nav ul li a i.bi-house-fill {
 
 /* PLUM — lighter by default, darker on hover */
 .btn.btn-elegant-plum{
-  /* lighter plum base */
-  background: linear-gradient(135deg,#5b4a7a,#6a5a8a);
-  border-color:#5b4a7a;
+  background: linear-gradient(135deg,#6A5987,#7A6A99); /* lighter base */
+  border-color:#6A5987;
   color:#fff;
   padding:.6rem 1rem;
   font-weight:600;
   letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
-  transition: background .2s ease, filter .2s ease, box-shadow .2s ease;
+  transition: background .2s ease, border-color .2s ease, filter .2s ease, box-shadow .2s ease;
 }
 .btn.btn-elegant-plum:hover,
 .btn.btn-elegant-plum:focus{
-  /* darker on hover */
-  background: linear-gradient(135deg,#4E3A65,#5A4A7A);
+  background: linear-gradient(135deg,#4E3A65,#5A4A7A); /* darker on hover */
   border-color:#4E3A65;
   color:#fff;
   filter:brightness(0.98);
@@ -141,6 +137,27 @@ nav ul li a i.bi-house-fill {
   box-shadow:0 5px 14px rgba(0,0,0,.10);
 }
 
+/* Pill-style utility for icon buttons — no movement on hover */
+.btn-chip{
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.55rem 1rem;
+  font-weight:600;
+  letter-spacing:.2px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition: filter .2s ease, box-shadow .2s ease;
+}
+.btn-chip:hover,
+.btn-chip:focus{
+  filter:brightness(1.08);
+  box-shadow:0 6px 16px rgba(0,0,0,.12);
+}
+.btn-chip:active{
+  filter:brightness(1.02);
+  box-shadow:0 5px 14px rgba(0,0,0,.10);
+}
 
 
 
@@ -1540,6 +1557,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
 
