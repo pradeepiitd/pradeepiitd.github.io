@@ -132,7 +132,7 @@ nav ul li a i.bi-house-fill {
 
 
 
-/* Pill-style utility for icon buttons — no hover movement */
+/* Pill-style utility for icon buttons */
 .btn-chip{
   border-radius:999px;
   display:inline-flex;
@@ -142,18 +142,17 @@ nav ul li a i.bi-house-fill {
   font-weight:600;
   letter-spacing:.2px;
   box-shadow:0 4px 12px rgba(0,0,0,.08);
-  /* removed transform from transitions to prevent nudge */
+  /* remove transform from the transition so it won't nudge on hover */
   transition: filter .2s ease, box-shadow .2s ease;
 }
-
 .btn-chip:hover,
 .btn-chip:focus{
+  /* slightly brighter + softer shadow; no transform */
   filter:brightness(1.08);
   box-shadow:0 6px 16px rgba(0,0,0,.12);
-  /* no transform */
 }
-
 .btn-chip:active{
+  /* keep it steady on click as well */
   filter:brightness(1.02);
   box-shadow:0 5px 14px rgba(0,0,0,.10);
 }
@@ -1558,6 +1557,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 
 
 
