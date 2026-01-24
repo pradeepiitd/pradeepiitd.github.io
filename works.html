@@ -28,718 +28,141 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  
-
 </head>
 
 <body>
 
-  
-
-
-    <!-- ======= Header ======= -->
-<header id="header">
+  <!-- ======= Header ======= -->
+  <header id="header">
     <div class="d-flex flex-column">
-  
-  
+
       <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="index.html"><i class="bi bi-house"></i> <span>Home</span></a></li>
           <li><a href="past-images.html"><i class="bi bi-images"></i> <span>Pensieve</span></a></li>
-
-          <li><a href="#contact"><i class="bx bx-envelope"></i><span>Contact</span> </a></li>
-          
-  
+          <li><a href="#contact"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-  
+
+      <button type="button"
+              class="mobile-nav-toggle d-xl-none"
+              onclick="toggleMobileMenu()"
+              aria-label="Toggle navigation">
+        <i class="icofont-navigation-menu"></i>
+      </button>
+
     </div>
   </header><!-- End Header -->
-    
 
   <main id="main">
 
-     <section id="about" class="about">
+    <!-- ======= Work Section ======= -->
+    <section class="about">
+      <div class="container" data-aos="fade-up">
 
-
-  <div >
-    <br>
-    <br>
-    
-                            
-  <table style="width:100%;border:auto;border-spacing:auto;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <div class="section-title">
-      <h2>Representative Works</h2>
-      
-    </div>
-    
-    <tbody>
-
-
-      
-      <tr onmouseout="fin_stop()" onmouseover="fin_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='fin_image'><img src='images/fin_back.png' style='width: 120px; height: 120px;'></div>
-          <img src='images/fin_cover.png' style='width: 120px; height: 120px;'>
+        <div class="section-title" style="text-align:center; margin-bottom:1rem;">
+          <h4 style="font-family:'Georgia',serif; font-weight:700; font-size:1.6rem; color:#2B2D42; margin:0;">
+            Work
+          </h4>
+          <div style="margin:.4rem auto 0; height:2px; width:88px; background:#dee2e6; border-radius:2px;"></div>
         </div>
-        <script type="text/javascript">
-          function fin_start() {
-            document.getElementById('fin_image').style.opacity = "1";
-          }
 
-          function fin_stop() {
-            document.getElementById('fin_image').style.opacity = "0";
-          }
-          fin_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://onlinelibrary.wiley.com/journal/1099131X">
-            <span class="papertitle">Turning Time into Shapes: A Point-Cloud Framework with Chaotic Signatures for Time Series</span>
-        </a>
-        <br>
-        P. Singh and R. Balasubramanian
-        <br>
-        <em>Journal of Forecasting (Wiley), 2025</em>
-        <br>
-        
-          <a href="https://onlinelibrary.wiley.com/journal/1099131X">In Press</a>
-        <br>
-      
-        
-        <p></p>
-    </td>
-    </tr>
+        <!-- Elegant cards -->
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div style="
+              background: linear-gradient(135deg, #ffffff 0%, #f5f8fc 100%);
+              border: 1px solid #e9ecef;
+              border-radius: 12px;
+              box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+              padding: 18px 18px;
+            ">
+
+              <!-- Publications -->
+              <h6 style="
+                font-family:'Georgia',serif;
+                font-weight:700;
+                font-size:1.4rem;
+                color:#4E3A65;
+                border-bottom:2px solid #dee2e6;
+                display:inline-block;
+                padding-bottom:.25rem;
+                margin-top:.25rem;
+                margin-bottom:1rem;
+              ">
+                Publications&nbsp;&nbsp;<small>(PDF)</small>
+              </h6>
+
+              <p style="margin:0 0 .75rem 0; font-size:16px; color:#2B2D42;">
+                A consolidated list of my publications (journal articles, conference papers, books, and preprints).
+              </p>
+
+              <a href="https://drive.google.com/file/d/1MH9fBGe12Me9x_B-RLjzET-OrBUZmP-F/view?usp=sharing"
+                 target="_blank"
+                 class="btn btn-primary btn-elegant-plum"
+                 style="margin-right:.75rem; margin-bottom:.75rem;">
+                <i class="bi bi-file-earmark-text" style="margin-right:.35rem;"></i>
+                View Publications PDF
+              </a>
+
+              <div style="height:16px;"></div>
+
+              <!-- Visualizations -->
+              <h6 style="
+                font-family:'Georgia',serif;
+                font-weight:700;
+                font-size:1.4rem;
+                color:#4E3A65;
+                border-bottom:2px solid #dee2e6;
+                display:inline-block;
+                padding-bottom:.25rem;
+                margin-top:1rem;
+                margin-bottom:1rem;
+              ">
+                Visualizations&nbsp;&nbsp;<small>(interactive gallery)</small>
+              </h6>
+
+              <p style="margin:0 0 .75rem 0; font-size:16px; color:#2B2D42;">
+                A curated set of visual artifacts, figures, and interactive displays. (This keeps the page lightweight.)
+              </p>
+
+              <a href="visuals.html"
+                 class="btn btn-secondary btn-elegant-teal"
+                 style="margin-right:.75rem; margin-bottom:.75rem;">
+                <i class="bi bi-grid-3x3-gap" style="margin-right:.35rem;"></i>
+                Open Visualizations
+              </a>
 
-
-
-       <tr onmouseout="geo2_stop()" onmouseover="geo2_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='geo2_image'><img src='images/geo2_back.png' style='width: 120px; height: 120px;'></div>
-          <img src='images/geo2_front.png' style='width: 120px; height: 120px;'>
-        </div>
-        <script type="text/javascript">
-          function geo2_start() {
-            document.getElementById('geo2_image').style.opacity = "1";
-          }
-
-          function geo2_stop() {
-            document.getElementById('geo2_image').style.opacity = "0";
-          }
-          geo2_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://www.sciencedirect.com/science/article/pii/S0098300424003327?via%3Dihub">
-            <span class="papertitle">IsoMapGen: Framework for Early Prediction of Peak Ground Acceleration Using Tripartite Feature Extraction and Gated Attention Model</span>
-        </a>
-        <br>
-        A. Joshi, P. Singh and R. Balasubramanian
-        <br>
-        <em>Computers and Geosciences (Elsevier), vol. 196,  pp. 1-15,  2025</em>
-        <br>
-        <a href="https://www.sciencedirect.com/science/article/pii/S0098300424003327?via%3Dihub">DOI:10.1016/j.cageo.2024.105849</a>
-        <br>
-       
-        
-        <p></p>
-    </td>
-    </tr>
-
-      
-
-       <tr onmouseout="geo_stop()" onmouseover="geo_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='geo_image'><img src='images/geo_back.png' style='width: 120px; height: 120px;'></div>
-          <img src='images/geo_cover.png' style='width: 120px; height: 120px;'>
-        </div>
-        <script type="text/javascript">
-          function geo_start() {
-            document.getElementById('geo_image').style.opacity = "1";
-          }
-
-          function geo_stop() {
-            document.getElementById('geo_image').style.opacity = "0";
-          }
-          geo_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/document/10679183">
-            <span class="papertitle">A Deep Attention Model for Onsite Estimation of Earthquake Epicenter Distance and Magnitude</span>
-        </a>
-        <br>
-        A. Joshi, P. Singh and R. Balasubramanian
-        <br>
-        <em>IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-11,  2024</em>
-        <br>
-        <a href="https://doi.org/10.1109/TGRS.2024.3459425">DOI:10.1109/TGRS.2024.3459425</a>
-        <br>
-       
-        
-        <p></p>
-    </td>
-    </tr>
-
-    <tr onmouseout="mmm_stop()" onmouseover="mmm_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='mmm_image'><img src='images/acmmm_back.png' style='width: 120px; height: 120px;'></div>
-          <img src='images/acmmm_cover.png' style='width: 120px; height: 120px;'>
-        </div>
-        <script type="text/javascript">
-          function mmm_start() {
-            document.getElementById('mmm_image').style.opacity = "1";
-          }
-
-          function mmm_stop() {
-            document.getElementById('mmm_image').style.opacity = "0";
-          }
-          mmm_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://doi.org/10.1145/3664647.3688986">
-            <span class="papertitle">Towards Engagement Prediction: A Cross-Modality Dual-Pipeline
-              Approach using Visual and Audio Features</span>
-        </a>
-        <br>
-        D. Kumar, S. Madan, P. Singh, A. Dhall and R. Balasubramanian
-        <br>
-        <em>ACM MULTIMEDIA 2024, 28 October - 1 November 2024, Melbourne, Australia</em>
-        <br>
-        <a href="https://doi.org/10.1145/3664647.3688986">DOI:10.1145/3664647.3688986</a>
-        <br>
-       
-        
-        <p></p>
-    </td>
-    </tr>
-
-       <tr onmouseout="q1_stop()" onmouseover="q1_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='q1_image'><img src='images/q1_back.png' style='width: 150px; height: 140px;'></div>
-          <img src='images/q1_front.png' style='width: 150px; height: 140px;'>
-        </div>
-        <script type="text/javascript">
-          function q1_start() {
-            document.getElementById('q1_image').style.opacity = "1";
-          }
-
-          function q1_stop() {
-            document.getElementById('q1_image').style.opacity = "0";
-          }
-          q1_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://www.sciencedirect.com/science/article/pii/S1746809424006670">
-          <span class="papertitle">All Signals Point to Personality: A Dual-Pipeline LSTM-Attention and Symbolic Dynamics Framework for Predicting Personality Traits from Bio-Electrical Signals</span>
-        </a>
-        <br>
-         D. Kumar, P. Singh and R. Balasubramanian
-        <br>
-        <em>Biomedical Signal Processing and Control (Elsevier), vol. 96(A), pp. 1-12, 2024
-</em>
-        <br>
-         <a href="https://doi.org/10.1016/j.bspc.2024.106609">DOI:10.1016/j.bspc.2024.106609</a>
-        <br>
-        <br>
-        <br>
-        <br>
-       
-        <p></p>
-      </td>
-    </tr>
-
-      <tr onmouseout="fg_stop()" onmouseover="fg_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='fg_image'><img src='images/fg-back.png' style='width: 140px; height: 130px;'></div>
-          <img src='images/fg_front.png' style='width: 140px; height: 110px;'>
-        </div>
-        <script type="text/javascript">
-          function fg_start() {
-            document.getElementById('fg_image').style.opacity = "1";
-          }
-
-          function fg_stop() {
-            document.getElementById('fg_image').style.opacity = "0";
-          }
-          fg_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://doi.org/10.1109/FG59268.2024.10581941">
-          <span class="papertitle">Neuro-Emotional Mapping of Human Emotions via EEG Signals</span>
-        </a>
-        <br>
-         D. Kumar, P. Singh, A. Kumar, S. Ghosh and R. Balasubramanian
-        <br>
-        <em>18th IEEE International Conference on Automatic Face and Gesture Recognition (FG),  27-31 May 2024, Istanbul, Turkey
-</em>
-      
-        <br>
-         <a href="https://doi.org/10.1109/FG59268.2024.10581941">DOI:10.1109/FG59268.2024.10581941</a>
-        
-        <br>
-        <br>
-        <br>
-       
-        <p></p>
-      </td>
-    </tr>
-
-
-       <tr onmouseout="emotion_stop()" onmouseover="emotion_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='emotion_image'><img src='images/archi_emotion.png' style='width: 150px; height: 90px;'></div>
-          <img src='images/emotion_back4.png' style='width: 150px; height: 90px;'>
-        </div>
-        <script type="text/javascript">
-          function emotion_start() {
-            document.getElementById('emotion_image').style.opacity = "1";
-          }
-
-          function emotion_stop() {
-            document.getElementById('emotion_image').style.opacity = "0";
-          }
-          emotion_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://doi.org/10.1109/IJCNN60899.2024.10650662">
-          <span class="papertitle">Integrating Physiological Signals with Dynamical
-                     Attention Networks for Personality Trait Analysis</span>
-        </a>
-        <br>
-         D. Kumar, P. Singh, Richa, K.B. Nampalle and R. Balasubramanian
-        <br>
-        <em>International Joint Conference on Neural Networks (IJCNN 2024), 30 June - 5 July 2024, Yokohama, Japan
-</em>
-        <br>
-        <a href="https://doi.org/10.1109/IJCNN60899.2024.10650662">DOI:10.1109/IJCNN60899.2024.10650662</a>
-        <br>
-        <br>
-      
-       
-        <p></p>
-      </td>
-    </tr>
-
-
-      
-
-
-   <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='mpi_image'><img src='images/Idealtetrahedron.png' style='width: 160px; height: 160px;'></div>
-          <img src='images/Metric3.png' style='width: 160px; height: 145px;'>
-        </div>
-        <script type="text/javascript">
-          function mpi_start() {
-            document.getElementById('mpi_image').style.opacity = "1";
-          }
-
-          function mpi_stop() {
-            document.getElementById('mpi_image').style.opacity = "0";
-          }
-          mpi_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://doi.org/10.1007/s10883-024-09721-0">
-            <span class="papertitle">Coding Billiards In Hyperbolic 3-Space</span>
-        </a>
-        <br>
-        P. Singh
-        <br>
-        <em>Journal of Dynamical and Control Systems (Springer Nature), vol 30(4), pp. 30-47, 2024</em>
-        
-        <br>
-         <a href="https://doi.org/10.1007/s10883-024-09721-0">DOI:10.1007/s10883-024-09721-0</a>
-        <br>
-        <br>
-        
-        <p></p>
-    </td>
-    </tr>
-
-    <tr onmouseout="loss_stop()" onmouseover="loss_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='loss_image'><img src='images/forwardgeodesics.jpeg' style='width: 150px; height: 150px;'></div>
-          <img src='images/bratteli.jpeg' style='width: 150px; height: 150px;'>
-        </div>
-        <script type="text/javascript">
-          function loss_start() {
-            document.getElementById('loss_image').style.opacity = "1";
-          }
-
-          function loss_stop() {
-            document.getElementById('loss_image').style.opacity = "0";
-          }
-          loss_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DD93D27350A6069C8C5E50F4E7BDBA1A/S1446788723000174a.pdf/brattelivershikisability_of_polygonal_billiards_on_the_hyperbolic_plane.pdf">
-            <span class="papertitle">Bratteli-Vershikizability of Polygonal Billiards on the Hyperbolic Plane</span>
-        </a>
-        <br>
-        A. Nagar and P. Singh 
-        <br>
-        <em>Journal of the Australian Mathematical Society (Cambridge University Press),  vol 117.1, pp. 85-104, 2024</em>
-        <br>
-        <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DD93D27350A6069C8C5E50F4E7BDBA1A/S1446788723000174a.pdf/brattelivershikisability_of_polygonal_billiards_on_the_hyperbolic_plane.pdf">DOI:10.1017/S1446788723000174</a>
-        <br>
-        <br>
-        
-        <p></p>
-    </td>
-    </tr>
-
-
-      
-    
-    <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='porlight_image'><img src='images/Metric1.jpeg' style='width: 150px; height: 150px;'></div>
-          <img src='images/Compact.jpeg' style='width: 150px; height: 160px;'>
-        </div>
-        <script type="text/javascript">
-          function porlight_start() {
-            document.getElementById('porlight_image').style.opacity = "1";
-          }
-
-          function porlight_stop() {
-            document.getElementById('porlight_image').style.opacity = "0";
-          }
-          porlight_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://drive.google.com/file/d/1GBwZYGKdhnW-ydTepaOI5y4BHBNSSq5b/view?usp=sharing">
-            <span class="papertitle">Finiteness in Polygonal Billiards on Hyperbolic Plane</span>
-        </a>
-        <br>
-         A. Nagar and P. Singh 
-        <br>
-        <em>Topological Methods in Nonlinear Analysis (Juliusz Schauder Center for Nonlinear Studies), vol 58(2), pp. 481–520, 2021</em>
-        <br>
-        <a href="https://doi.org/10.12775/TMNA.2021.003">DOI:10.12775/TMNA.2021.003</a>
-        <br>
-        <br>
-        
-        <p></p>
-    </td>
-    </tr>    
-
-     
-
-
-
-     
-
-
-      
-          
-
-  </tbody></table>
-
-</div>
-
-
-
-
-
-
-  <div >
-  
-    
-    
-
-
-    <table style="width:100%;border:auto;border-spacing:auto;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <div class="section-title">
-        <h2>Books</h2>
-        
-      </div>
-      
-
-
-     
-     
-
-
-    <tbody>
-
-
-      
-<tr onmouseout="tensor_stop()" onmouseover="tensor_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <br>
-          <div class="two" id='tensor_image'><img src='images/book1_back.png' style='width: 90px; height: 120px;'></div>
-          <img src='images/tensor2.png' style='width: 90px; height: 120px;'>
-        </div>
-        <script type="text/javascript">
-          function tensor_start() {
-            document.getElementById('tensor_image').style.opacity = "1";
-          }
-
-          function tensor_stop() {
-            document.getElementById('tensor_image').style.opacity = "0";
-          }
-          tensor_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://link.springer.com/book/9789819780181">
-            <span class="papertitle">Deep Learning Through the Prism of Tensors</span>
-        </a>
-        <br>
-        P. Singh and R. Balasubramanian
-        <br>
-        <em>Springer Nature Singapore, 2024,</em>
-        <em>ISBN: 978-981-97-8018-1</em>
-        
-       
-        
-        <p></p>
-    </td>
-    </tr>
-
-      <tr onmouseout="book2_stop()" onmouseover="book2_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <br>
-          <div class="two" id='book2_image'><img src='images/book2_back_new.png' style='width: 90px; height: 120px;'></div>
-          <img src='images/book2_front.png' style='width: 88px; height: 120px;'>
-        </div>
-        <script type="text/javascript">
-          function book2_start() {
-            document.getElementById('book2_image').style.opacity = "1";
-          }
-
-          function book2_stop() {
-            document.getElementById('book2_image').style.opacity = "0";
-          }
-          book2_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://link.springer.com/book/10.1007/978-981-96-4706-4">
-            <span class="papertitle">The Geometry of Intelligence: Foundations of Transformer Networks in Deep Learning</span>
-        </a>
-        <br>
-        P. Singh and R. Balasubramanian
-        <br>
-        <em>Springer Nature Singapore, 2025,</em>
-        <em>ISBN: 978-981-96-4705-7</em>
-       
-       
-        
-        <p></p>
-    </td>
-    </tr>
-
-
-       <tr onmouseout="book3_stop()" onmouseover="book3_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <br>
-          <div class="two" id='book3_image'><img src='images/book3_back_new.png' style='width: 90px; height: 120px;'></div>
-          <img src='images/book3_front.png' style='width: 90px; height: 120px;'>
-        </div>
-        <script type="text/javascript">
-          function book3_start() {
-            document.getElementById('book3_image').style.opacity = "1";
-          }
-
-          function book3_stop() {
-            document.getElementById('book3_image').style.opacity = "0";
-          }
-          book3_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://www.mheducation.com/">
-            <span class="papertitle">Artificial Intelligence and Machine Learning</span>
-        </a>
-        <br>
-        P. Singh, T. K. Gandhi and R. Balasubramanian
-        <br>
-        <em>McGraw Hill India, 2025,</em>
-        <em>In Press</em>
-        <br>
-       
-        
-        <p></p>
-    </td>
-    </tr>
-    
-    
-    
-
-    <tr onmouseout="bit_stop()" onmouseover="bit_start()">
-      <td style="padding:15px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bit_image'><img src='images/bits_back.png' style='width: 90px; height: 120px;'></div>
-          <img src='images/bits_cover.png' style='width: 90px; height: 120px;'>
-        </div>
-        <script type="text/javascript">
-          function bit_start() {
-            document.getElementById('bit_image').style.opacity = "1";
-          }
-
-          function bit_stop() {
-            document.getElementById('bit_image').style.opacity = "0";
-          }
-          bit_stop()
-        </script>
-      </td>
-      <td style="padding:0px;width:75%;vertical-align:middle">
-        <a href="https://www.amazon.in/dp/B0CNQJJV7T?ref_=cm_sw_r_cp_ud_dp_BADKYYDFPC16A8FXC200_1">
-            <span class="papertitle">Bits and Bots</span>
-        </a>
-        <br>
-        P. Singh
-        <br>
-        <em>Kindle Publishing, 2023, ISBN: 979-886-81-3470-8</em>
-        <br>
-        <br>
-        <br>
-        
-        <p></p>
-    </td>
-    </tr>
-
-   
-  
-  </tbody></table>
-
-
-
-  <table style="width:100%;border:auto;border-spacing:auto;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <div class="section-title">
-      <h2>Resources</h2>
-      
-    </div>
-    
-
-
- <br>
-
-
-  <tbody>
-
-
-    
-
-    
-  
-  
-  
-
-  
-
-  <tr onmouseout="geom_stop()" onmouseover="geom_start()">
-    <td style="padding:15px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='geom_image'><img src='images/gauss.png' style='width: 90px; height: 120px;'></div>
-        <img src='images/lecun.png' style='width: 90px; height: 120px;'>
-      </div>
-      <script type="text/javascript">
-        function geom_start() {
-          document.getElementById('geom_image').style.opacity = "1";
-        }
-
-        function geom_stop() {
-          document.getElementById('geom_image').style.opacity = "0";
-        }
-        geom_stop()
-      </script>
-    </td>
-    <td style="padding:0px;width:75%;vertical-align:middle">
-      <a href="https://geometricdeeplearning.com/">
-          Geometric Deep Learning
-      </a>
-      <br>
-      <a href="https://arxiv.org/abs/2104.13478">Grids, Groups, Graphs, Geodesics, and Gauges</a>
-      <br>
-      <a href="https://thegradient.pub/towards-geometric-deep-learning/">Towards Geometric Deep Learning</a>
-      <br>
-      <a href="https://towardsdatascience.com/a-brief-introduction-to-geometric-deep-learning-dae114923ddb">Brief Introduction to GDL</a>
-      <br>
-      <br>
-    
-    
-      
-      
-      <p></p>
-  </td>
-  </tr>
-
-</tbody></table>
-
-
-
-  </div>
-
-  
- 
-</div>
-
-
-</section>
-
-
-
-
-
-
- <!-- ======= Contact Section ======= -->
- <section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
-
-      
-      
-      <div class="row mt-1">
-        <div class="col-lg-6">
-          <div class="info">
-
-        
-            
-            <div class="address" style="display: flex; align-items: center;">
-              <i class="bi bi-geo-alt" style="margin-right: 5px;"></i>
-              <p>Machine Intelligence Lab<br> Department of Computer Science and Engineering<br> IIT Roorkee</p>
             </div>
-      
-            <div class="email" style="display: flex; align-items: center;">
-              <i class="bi bi-envelope" style="margin-right: 5px;"></i>
-              <p>pradeep.cs@sric.iitr.ac.in</p>
-            </div>
-      
-            
 
           </div>
         </div>
+
       </div>
-      
-  </section><!-- End Contact Section -->
-</main>
+    </section><!-- End Work Section -->
 
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="row mt-1">
+          <div class="col-lg-6">
+            <div class="info">
+              <div class="address" style="display:flex; align-items:center;">
+                <i class="bi bi-geo-alt" style="margin-right:5px;"></i>
+                <p>Machine Intelligence Lab<br> Department of Computer Science and Engineering<br> IIT Roorkee</p>
+              </div>
+              <div class="email" style="display:flex; align-items:center;">
+                <i class="bi bi-envelope" style="margin-right:5px;"></i>
+                <p>pradeep.cs@sric.iitr.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
 
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -755,13 +178,21 @@
       <div class="copyright">
         &copy; <span>DeepDynamics</span>
       </div>
-      <div class="credits">
-      </div>
+      <div class="credits"></div>
     </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Mobile nav toggle (matches your index fix) -->
+  <script>
+    function toggleMobileMenu() {
+      document.body.classList.toggle('mobile-nav-active');
+    }
+  </script>
 
   <!-- JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -778,5 +209,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
